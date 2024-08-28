@@ -39,31 +39,32 @@ namespace biopot.Models
         }
 
         private string _lastMatch;
-        public string LastMatch
+        public DateTime LastMatchDate
         {
-            get => _lastMatch;
-            set => SetProperty(ref _lastMatch, value);
+            get => DateTime.TryParse(_lastMatch, out var date) ? date : DateTime.Now;
+            set => SetProperty(ref _lastMatch, value.ToString("o"));
         }
 
-        private bool _concussed72Hr;
-        public bool Concussed72Hr
+        private string _concussed72Hr;
+        public string Concussed72Hr
         {
             get => _concussed72Hr;
             set => SetProperty(ref _concussed72Hr, value);
         }
 
         private string _lastConcussion;
-        public string LastConcussion
+
+        public DateTime LastConcussionDate
         {
-            get => _lastConcussion;
-            set => SetProperty(ref _lastConcussion, value);
+            get => DateTime.TryParse(_lastConcussion, out var date) ? date : DateTime.Now;
+            set => SetProperty(ref _lastConcussion, value.ToString("o"));
         }
 
         private string _lastHIA;
-        public string LastHIA
+        public DateTime LastHIADate
         {
-            get => _lastHIA;
-            set => SetProperty(ref _lastHIA, value);
+            get => DateTime.TryParse(_lastHIA, out var date) ? date : DateTime.Now;
+            set => SetProperty(ref _lastHIA, value.ToString("o"));
         }
 
         private string _symptoms;

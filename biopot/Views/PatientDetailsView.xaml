@@ -149,27 +149,23 @@
 
                 <Label Grid.Row="4" Grid.Column="0" Text="Last Match:" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Small"/>
                 <AbsoluteLayout Grid.Row="4" Grid.Column="1"  >
-                    <Picker 
-                        Title="Select Last Match" 
+                    <DatePicker 
+                        Format="dd/MM/yyyy" 
                         VerticalOptions="Center" 
                         FontSize="Small" 
-                        SelectedItem="{Binding PatientsInformation.LastMatch}"
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
-                        HorizontalOptions="FillAndExpand">
-                        <Picker.Items>
-                            <x:String>Item1</x:String>
-                            <x:String>Item2</x:String>
-                        </Picker.Items>
-                    </Picker>
+                        HorizontalOptions="FillAndExpand"
+                        Date="{Binding PatientsInformation.LastMatchDate}"
+                    />  
                     <Image 
-                        WidthRequest="10" 
-                        HeightRequest="10" 
+                        WidthRequest="18" 
+                        HeightRequest="18" 
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
                         HorizontalOptions="End" 
-                        Margin="5,0"
-                        Source="down_arrow.png" 
+                        Margin="5,0,5,5"
+                        Source="datepicker.png" 
                     />
                 </AbsoluteLayout>
 
@@ -179,13 +175,13 @@
                         Title="Select Consussed 72 Hr" 
                         VerticalOptions="Center" 
                         FontSize="Small" 
-                        SelectedItem="{Binding PatientsInformation.Consussed72Hr}"
+                        SelectedItem="{Binding PatientsInformation.Concussed72Hr}"
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
                         HorizontalOptions="FillAndExpand">
                         <Picker.Items>
-                            <x:String>Consussed 1</x:String>
-                            <x:String>Consussed 2</x:String>
+                            <x:String>Yes</x:String>
+                            <x:String>No</x:String>
                         </Picker.Items>
                     </Picker>
                     <Image 
@@ -198,58 +194,50 @@
                         Source="down_arrow.png" 
                     />
                 </AbsoluteLayout>
+                
 
                 <Label Grid.Row="6" Grid.Column="0" Text="Last Concussion:" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Small"/>
                 <AbsoluteLayout Grid.Row="6" Grid.Column="1" >
-                    <Picker 
-                        Title="Select Last Concussion" 
+                    <DatePicker 
+                        Format="dd/MM/yyyy" 
                         VerticalOptions="Center" 
                         FontSize="Small" 
-                        SelectedItem="{Binding PatientsInformation.LastConcussion}"
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
                         HorizontalOptions="FillAndExpand"
-                    >
-                        <Picker.Items>
-                            <x:String>Last Concussion 1</x:String>
-                            <x:String>Last Concussion 2</x:String>
-                        </Picker.Items>
-                    </Picker>
+                        Date="{Binding PatientsInformation.LastConcussionDate}"
+                    />
                     <Image 
-                        WidthRequest="10" 
-                        HeightRequest="10" 
+                        WidthRequest="18" 
+                        HeightRequest="18" 
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
                         HorizontalOptions="End" 
-                        Margin="5,0"
-                        Source="down_arrow.png" 
+                        Margin="5,0,5,5"
+                        Source="datepicker.png" 
                     />
                 </AbsoluteLayout>
 
 
                 <Label Grid.Row="7" Grid.Column="0" Text="Last HIA:" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Small"/>
                 <AbsoluteLayout Grid.Row="7" Grid.Column="1" >
-                    <Picker 
-                        Title="Select Last HIA" 
+                    <DatePicker 
+                        Format="dd/MM/yyyy" 
                         VerticalOptions="Center" 
                         FontSize="Small" 
-                        SelectedItem="{Binding PatientsInformation.LastHIA}"
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
-                        HorizontalOptions="FillAndExpand">
-                        <Picker.Items>
-                            <x:String>Last HIA 1</x:String>
-                            <x:String>Last HIA 2</x:String>
-                        </Picker.Items>
-                    </Picker>
+                        HorizontalOptions="FillAndExpand"
+                        Date="{Binding PatientsInformation.LastHIADate}"
+                    />
                     <Image 
-                        WidthRequest="10" 
-                        HeightRequest="10" 
+                        WidthRequest="18" 
+                        HeightRequest="18" 
                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
                         AbsoluteLayout.LayoutFlags="All" 
                         HorizontalOptions="End" 
-                        Margin="5,0"
-                        Source="down_arrow.png" 
+                        Margin="5,0,5,5"
+                        Source="datepicker.png" 
                     />
                 </AbsoluteLayout>
             </Grid>

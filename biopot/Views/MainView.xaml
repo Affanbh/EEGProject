@@ -63,7 +63,7 @@
                         <StackLayout Spacing="20" Padding="30,0" VerticalOptions="FillAndExpand">
                             <StackLayout Padding="0,10,0,15">
                                 <ContentView>
-                                    <Label Text="{x:Static localization:Strings.PatientDetails}" Style="{StaticResource titleTextLabelStyle}"
+                                    <Label Text="Participant Details" Style="{StaticResource titleTextLabelStyle}"
                                            HorizontalOptions="Center"/>
                                 </ContentView>
                             </StackLayout>
