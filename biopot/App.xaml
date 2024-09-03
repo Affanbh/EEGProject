@@ -40,7 +40,7 @@
             <Color x:Key="activeTabStripTextColor">#FF4680F2</Color>
             <Color x:Key="inActiveTabStripTextColor">#FFC8C7CC</Color>
             <Color x:Key="mainPageChartIDColor">#FF6F6F6F</Color>
-            <Color x:Key="impedanceBgColor">#FF6F6F6F</Color>
+            <Color x:Key="impedanceBgColor">White</Color>
             <Color x:Key="impedanceGreenColor">#ABD69C</Color>
             <Color x:Key="impedanceOrangeColor">#FFF200</Color>
             <Color x:Key="impedanceRedColor">#741472</Color>
