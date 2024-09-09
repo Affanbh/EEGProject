@@ -284,6 +284,7 @@ namespace biopot.ViewModels
             {
                 if (isEndTask)
                 {
+                    await DisconnectCurrentDeviceAsync();
                     CurrentStep = EWelcomeSteps.First;
                     _saveDataService.StopRecord();
                     if (parameters.TryGetValue("AudioName", out string audioName))
