@@ -294,6 +294,8 @@ namespace biopot.ViewModels
                         _saveDataService.SaveAudioDate(audioData);
 
                     PatientDetailsViewModel.PatientsInformation = new PatientsInformation();
+
+                    DependencyService.Get<IAppRestartService>().RestartApp();
                 }
             }
         }
